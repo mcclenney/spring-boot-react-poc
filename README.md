@@ -6,7 +6,7 @@ A proof of concept for a full stack app with a React front-end and a back-end co
 
 In server directory:
 ```sh
-$ spring-boot:run
+$ mvn spring-boot:run
 ```
 
 | Endpoint        | HTTP Method | CRUD Method | Result        |

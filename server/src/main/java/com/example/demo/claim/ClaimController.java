@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin
 @RestController
 @RequestMapping(value="v1/claims")
 public class ClaimController {
@@ -15,7 +16,6 @@ public class ClaimController {
     private ClaimService claimService;
 
     @RequestMapping(value="/",method = RequestMethod.GET)
-    @CrossOrigin(origins = "http://localhost:3000")
     public List<Claim> getAllClaims() {
         return claimService.getAllClaims();
     }

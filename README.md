@@ -5,8 +5,14 @@ A proof of concept for a full stack app with a React front-end and a back-end co
 ### Claim service API - http://localhost:8080
 
 In server directory:
+
+Run with maven
 ```sh
 $ mvn spring-boot:run
+```
+or build and run docker image:
+```sh
+$ docker-compose up
 ```
 
 | Endpoint        | HTTP Method | CRUD Method | Result        |
